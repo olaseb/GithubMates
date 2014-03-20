@@ -1,0 +1,13 @@
+<div id="form">
+	<%= form_for @form do |f|%>
+
+	<span class="user glyphicon glyphicon-user"></span>&nbsp;<label class="user" for="user">User:</label>
+	<%= f.text_field :user %>
+
+	<span class="repo glyphicon glyphicon-list"></span>&nbsp;<label class="repo" for="repo">Repo:</label>
+	<%= f.text_field :repo %>
+
+	<br>
+	<input class="send btn btn-primary" type="submit" value="Send" />
+	<% end %>
+</div>
